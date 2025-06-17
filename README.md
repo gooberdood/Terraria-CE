@@ -1,4 +1,5 @@
-# PokeClicker CE
+# Terraria CE
+## Port of Terraria to the TI-84+ CE by gooberdev
 ### How to compile:
 Using the CE C Toolchain, enter the src/gfx directory and run "convimg", then back out to the makefile and type "make"
 
@@ -8,5 +9,4 @@ Using the CE C Toolchain, enter the src/gfx directory and run "convimg", then ba
 
 #### Alpha 1:
 ##### 1.0
-- Cursor and some other GUI elements
-- A small handful of Pokemon to fight
+- Nothing yet ;-;
