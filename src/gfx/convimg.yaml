@@ -12,9 +12,7 @@ converts:
     transparent-color-index: 0
     compress: zx0
     images:
-     - assets/spr_logo.png
-     - assets/spr_relogic.png
-     - assets/spr_tree.png
+     - assets/npc/guide/spr_guide1.png
 
 outputs:
   - type: appvar

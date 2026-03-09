@@ -4,14 +4,16 @@
 #include <math.h>
 #include "gfx/traspr.h"
 #include "functions.h"
+#include "tiles.h"
 
 int running = true;
+float playerX = 50; //player center X position
+float playerY = 128; //player foot Y position
+int playerChunk = 1;
 
-//initialize gfx / set up
 void initGfx(void) {
     gfx_Begin();
 	gfx_SetDrawBuffer();
-	//sets palette and transparent color
     gfx_SetPalette(global_palette, sizeof_global_palette, 0);
 	gfx_SetTransparentColor(0);
 	gfx_SetTextTransparentColor(0);
@@ -21,15 +23,14 @@ void initGfx(void) {
 
 
 void getInput(void) {
-	//scans the keypad then checks inputs
 	kb_Scan();
 	
 	if (kb_Data[6] & kb_Clear) {running = false;}
 }
 
-//renders graphics to screen
+
 void renderWindow(void) {
 	gfx_FillScreen(1);
-	
+	gfx_TransparentSprite_NoClip(spr_guide1, 152, 108);
 	gfx_SwapDraw();
 }
