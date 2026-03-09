@@ -6,6 +6,5 @@ Using the CE C Toolchain, enter the src directory and run "make gfx", then once 
 ### Changelog:
 
 
-#### Alpha 1:
-##### 1.0
-- Basic chunk loading and unloading
+#### A0.1
+- Added chunk loading, unloading, and saving system
