@@ -13,6 +13,8 @@ converts:
     compress: zx0
     images:
      - assets/npc/guide/spr_guide1.png
+     
+     - assets/tiles/dbg/spr_debugAir.png
 
 outputs:
   - type: appvar

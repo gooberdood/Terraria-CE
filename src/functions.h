@@ -11,6 +11,7 @@ extern int running;
 extern float playerX;
 extern float playerY;
 extern int playerChunk;
+extern float playerSpeed;
 
 void getInput(void);
 void renderWindow(void);

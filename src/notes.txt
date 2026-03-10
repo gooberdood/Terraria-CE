@@ -1,4 +1,4 @@
-player X and Y points to the center bottom of the player
+player X and Y points to the center of the player
 
 8 appvars for the world save and having the chunks load in strips of 100x640
 So each tile is a byte and each chunk fits into 64KB totalling a world sized 800x640 tiles, 512KB total
@@ -7,4 +7,8 @@ Might add larger worlds where the appvars take up 64x1000 with 16 appvars for 10
 
 tiles are 8px x 8px and player sprites are 16x24px
 
+screen is 40 tiles by 30 tiles exactly,
+
 IMPLEMENT ti_SetGCBehavior AT SOME POINT BECAUSE ITS IMPORTANT BUT CONFUSING
+
+StephenM IS A BEAUTIFUL GENIUS
