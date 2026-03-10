@@ -1,3 +1,3 @@
 #include <stdint.h>
 
-extern const uint8_t *tile_air;
+extern const int *tile_air;

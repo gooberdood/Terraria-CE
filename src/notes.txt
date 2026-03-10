@@ -12,3 +12,6 @@ screen is 40 tiles by 30 tiles exactly,
 IMPLEMENT ti_SetGCBehavior AT SOME POINT BECAUSE ITS IMPORTANT BUT CONFUSING
 
 StephenM IS A BEAUTIFUL GENIUS
+
+Add function to chunkmanager so you can switch which chunk is loaded
+Add function to chunkmanager so you can switch which mode a chunk is loaded with

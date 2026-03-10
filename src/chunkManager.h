@@ -2,5 +2,5 @@
 
 extern int worldChunk;
 
-void loadChunk(int chunk);
-void closeChunk(void);
+void loadChunk(int chunk, char mode[]);
+void closeChunk(int quit);

@@ -14,14 +14,18 @@
 
 int main(void) {
 	if (traspr_init() == 0) {return 1;}
+	
+	loadChunk(playerChunk, "a+");
+	ti_Rewind(worldChunk);
+    ti_Write(tile_air, 1, 64000, worldChunk);
+	closeChunk(0);
+	
 	initGfx();
 	decompressSprites();
 	
-	loadChunk(playerChunk);	
-    ti_Write(tile_air, 1, 64000, worldChunk);
-	ti_Rewind(worldChunk);
-	
 	//the endless loop of pain and suffering (for the developer, anyways)
+	
+	loadChunk(1, "r+");
 	do {
 		clock_t frame_start = clock();
 		
@@ -33,7 +37,7 @@ int main(void) {
 	} while(running);
 	
     gfx_End();
-	closeChunk();
 	freeSprites();
+	closeChunk(1);
     return 0;
 }

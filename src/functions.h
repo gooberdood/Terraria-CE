@@ -10,6 +10,8 @@
 extern int running;
 extern float playerX;
 extern float playerY;
+extern int cursorX;
+extern int cursorY;
 extern int playerChunk;
 extern float playerSpeed;
 
